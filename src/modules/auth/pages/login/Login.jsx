@@ -9,7 +9,6 @@ import { SET_AUTH_META } from "../../redux/authSlice";
 
 const Login = () => {
   const { authToken } = useSelector((state) => state.auth);
-  console.log("authToken", authToken);
   const [userMeta, setUserMeta] = useState({
     email: "",
     password: "",

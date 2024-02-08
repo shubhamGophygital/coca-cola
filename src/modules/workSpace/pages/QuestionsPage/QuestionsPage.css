@@ -1,0 +1,27 @@
+/* .QuestionsPage_ {
+  margin: 10px auto 25px;
+  background-color: var(--color-secondary);
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+} */
+
+.QuestionsPage_wrapper {
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.QuestionsPage_container {
+  width: fit-content;
+  background-color: var(--color-secondary);
+  border-radius: 30px;
+  padding: 75px 50px;
+}

@@ -9,28 +9,14 @@ const initialState = {
     userImage: "",
   },
   projectID: "",
-  projectName: "",
-  projectDescription: "",
-  assetsType: "",
-  projectDurationInsec: 0,
-  cueID: "",
-  selectedCSOption: "Voice",
-  activeWSTab: "Voice",
-  isVideoPlaying: false,
-  isVideoLoading: false,
-  isThumbnailsLoading: false,
-  timelineSeekTime: 0,
-  alphanumericCode: "",
-  isTimelineOpen: true,
+  questions: [],
+  selectedOptions: [],
 };
 
 const projectMetaSlice = createSlice({
   name: "PROJECT",
   initialState,
   reducers: {
-    SET_SELECTED_CS_OPTION: (state, action) => {
-      state.selectedCSOption = action.payload;
-    },
     SET_PROJECT_META: (state, action) => {
       let projectMetaObj = action.payload;
       for (const key in projectMetaObj) {
@@ -40,10 +26,17 @@ const projectMetaSlice = createSlice({
         }
       }
     },
+    SET_SELECTED_OPTION: (state, action) => {
+      let { id, option } = action.payload;
+      let selectedOptionIndex = state.selectedOptions.findIndex(
+        (option) => option.id === id
+      );
+      state.selectedOptions[selectedOptionIndex].option = option;
+    },
     RESET_PROJECT_META: () => initialState,
   },
 });
 
 export default projectMetaSlice.reducer;
-export const { SET_SELECTED_CS_OPTION, SET_PROJECT_META, RESET_PROJECT_META } =
+export const { SET_PROJECT_META, SET_SELECTED_OPTION, RESET_PROJECT_META } =
   projectMetaSlice.actions;
