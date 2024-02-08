@@ -1,0 +1,44 @@
+{
+  "BRAND_NAME": "Coca-Cola",
+  "TEMPO": ["Slow", "Medium", "Fast"],
+  "GENRE_TAGS": [
+    "hip-hop",
+    "electronic",
+    "chill out",
+    "pop",
+    "lo fi",
+    "cinematic_sparse",
+    "funk",
+    "house",
+    "rock",
+    "meditation"
+  ],
+  "MOOD_TAGS": ["fun", "inspirational", "light", "epic", "dark", "Romantic"],
+  "QUESTIONS": [
+    {
+      "id": 1,
+      "question": "What one word best describes you?",
+      "options": ["Funny", "Kind", "Strong", "Dedicated"]
+    },
+    {
+      "id": 2,
+      "question": "What nature scene appeals the most to you?",
+      "options": [
+        "A skipping rock",
+        "Morning birds",
+        "The stillness of the summer sun",
+        "A babbling brook"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What do you hope to be your biggest takeaway from attending Cannes Lions?",
+      "options": [
+        "Enjoy the city of cannes",
+        "Get inspired",
+        "Relationship building",
+        "Learn something new"
+      ]
+    }
+  ]
+}

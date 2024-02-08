@@ -1,0 +1,30 @@
+.custom_carousel_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+.custom_carousel_container .carousel_list {
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+  width: 75vw;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.custom_carousel_container li {
+  list-style: none;
+}
+
+.custom_carousel_container .arrow {
+  cursor: pointer;
+  transition: opacity 500ms;
+}
+
+.custom_carousel_container span {
+  pointer-events: auto;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.customBtn {
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  color: white;
+  font-size: 14px;
+  width: 175px;
+  height: 40px;
+  cursor: pointer;
+  font-family: var(--font-primary) !important;
+}
+
+.outlined {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.filled {
+  background-color: var(--color-primary);
+  border: none;
+  color: #fff;
+}
+
+.disabled {
+  background-color: var(--color-disabled);
+  cursor: not-allowed;
+  pointer-events: all !important;
+  color: #fff;
+}
+
+.sm {
+  width: max-content;
+  height: auto;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.primary_border {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+@media only screen and (max-width: 1024px) {
+  .customBtn {
+    font-size: 12px;
+    width: 140px;
+    height: 35px;
+  }
+  .sm {
+    width: max-content;
+    height: auto;
+  }
+}

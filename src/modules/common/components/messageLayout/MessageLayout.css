@@ -1,0 +1,20 @@
+.message_layout_container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.message_layout_container img {
+  width: 300px;
+  height: 300px;
+}
+
+.message_layout_container p {
+  font-size: 16px;
+  margin: 10px 0px;
+}

@@ -1,0 +1,11 @@
+.custom_tooltip {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+}
+
+.MuiTooltip-tooltip {
+  background-color: var(--color-secondary-shade5) !important;
+  /* margin: 5px !important; */
+}

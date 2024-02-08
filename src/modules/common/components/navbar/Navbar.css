@@ -1,0 +1,19 @@
+.navbar_container {
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  background: transparent;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 10px);
+  background-color: var(--color-bg);
+}
+
+.navbar_container .logo_left {
+  width: 125px;
+}

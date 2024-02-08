@@ -1,0 +1,68 @@
+.loader_container.overlayBg {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.loader_container .overlay {
+  min-width: 650px;
+  max-width: 800px;
+  background-color: var(--color-secondary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  border-radius: 100px;
+  padding: 30px 50px 30px 40px;
+  font-size: 18px;
+  line-height: 22px;
+  align-self: center;
+  text-align: center;
+  margin: 20px 30px;
+}
+
+.loader_container .logo_left {
+  width: 100px;
+  height: 100px;
+}
+
+.loader_container .right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 500px;
+  max-width: 650px;
+}
+
+.loader_container .cancel_btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-secondary-shade4);
+  cursor: pointer;
+  text-align: end;
+  padding-right: 20px;
+}
+
+.loader_container .loader_text_skeleton p {
+  width: 100%;
+  height: 16px;
+  margin-top: 10px;
+  animation: skeleton-loading 1s linear infinite alternate;
+  border-radius: 2px;
+}
+
+.loader_container .loader_text_skeleton p:last-child {
+  width: 75%;
+  margin: 10px auto 0px;
+}
